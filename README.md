@@ -17,3 +17,10 @@ https://naamkaran.netlify.app
 - Clean and modern UI
 - Responsive design
 - User-friendly interface
+
+## Preview
+### Homepage
+![Homepage](homepage.png)
+
+### Menu Bar
+![Menu Bar](menu-bar.png)
