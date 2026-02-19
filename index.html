@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="google-site-verification" content="FCQz5aASZqRkep3c97c-X9gpakIZwKN4lcypEaKzbKY" />
+  <title>Naamkaran – Baby Name Finder</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Find popular, trendy, modern and unique baby names for boys and girls.">
+  <meta name="keywords" content="baby names, boy names, girl names, indian baby names">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="robots" content="index, follow">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- OVERLAY -->
+  <div class="overlay" onclick="closeMenu()"></div>
+
+  <!-- HEADER -->
+  <header class="top-header">
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="logo">
+      <img src="images/logo.png" alt="Naamkaran Logo">
+    </div>
+    <div class="theme-toggle" onclick="toggleTheme()">🌙</div>
+  </header>
+
+  <!-- SIDE MENU -->
+  <nav id="sideMenu" class="side-menu">
+    <a onclick="loadSection('all')">Home</a>
+    <a onclick="loadSection('popular')">Popular</a>
+    <a onclick="loadSection('trendy')">Trendy</a>
+    <a onclick="loadSection('modern')">Modern</a>
+    <a onclick="loadSection('unique')">Unique</a>
+    <hr>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </nav>
+
+  <!-- SEARCH -->
+  <section class="search-box">
+    <input type="text" id="searchInput" placeholder="Search name or first letter...">
+  </section>
+
+  <!-- GENDER FILTER -->
+  <div class="gender">
+    <button onclick="setGender('all')">All</button>
+    <button onclick="setGender('boy')">Boy</button>
+    <button onclick="setGender('girl')">Girl</button>
+  </div>
+
+  <!-- ALPHABET FILTER -->
+  <div class="alphabets">
+    <span onclick="setLetter('')">All</span>
+    <span onclick="setLetter('A')">A</span>
+    <span onclick="setLetter('B')">B</span>
+    <span onclick="setLetter('C')">C</span>
+    <span onclick="setLetter('D')">D</span>
+  </div>
+
+  <!-- ADS -->
+  <div class="ad-box">
+    Advertisement Space (Google AdSense)
+  </div>
+
+  <!-- NAMES -->
+  <section id="nameList" class="name-list"></section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Official Website by <span>Aryan</span>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+  <script>
+    const menu = document.getElementById("sideMenu");
+    const overlay = document.querySelector(".overlay");
+
+    function toggleMenu() {
+      menu.classList.toggle("open");
+      overlay.classList.toggle("show");
+    }
+
+    function closeMenu() {
+      menu.classList.remove("open");
+      overlay.classList.remove("show");
+    }
+
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+
+</body>
+</html>
